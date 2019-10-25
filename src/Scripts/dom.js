@@ -1,6 +1,9 @@
 // function that displays park information on the dom when called in eventManager.js
 const displayNationalParksToDom = (response => {
     console.log(response)
+    // declare a variable that holds classname and 
+    // write conditional that would set value 
+    // 
     const nationalParksHtml = `
     <article>
         <h3>${response.name}</h3>
@@ -11,5 +14,3 @@ const displayNationalParksToDom = (response => {
     const nationalParksContainer = document.querySelector("#mainContainer")
     nationalParksContainer.innerHTML += nationalParksHtml
 })
-
-// If the park has been visited, the article tag should have a red dashed border. If the park has not been visited, it should have a green solid border.
