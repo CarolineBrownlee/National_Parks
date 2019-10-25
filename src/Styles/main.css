@@ -1,0 +1,7 @@
+.parkVisited {
+    border: 2px dashed red;
+  }
+
+.parkNotVisited {
+    border: 2px solid green;
+}
