@@ -1,22 +1,7 @@
-// const handleEventbriteSearch = () => {
-//     const inputField = document.querySelector("#eventbriteInput")
-//     console.log(inputField)
-//     searchEventbrite(inputField.value)
-//     // promise
-//     .then(response => {
-//       console.log(response)
-//       response.events.forEach(event => {
-//           console.log(event)
-//           displayEventbriteResultsHtml(event)
-//           inputField.value = ""
-//       });
-//     })
-// } 
-
+// function that handles taking info from promise, iterates over the array, and invokes displayNationalParksToDom for each park.
 const handleAPISearch = () => {
     searchAPI()
     .then(response => {
-        console.log(response)
         response.forEach(response => {
             displayNationalParksToDom(response)
         })
